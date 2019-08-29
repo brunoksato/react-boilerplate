@@ -1,0 +1,37 @@
+{
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 6
+  },
+  "env": {
+    "es6": true,
+    "node": true,
+    "jest": true,
+    "browser": true
+  },
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "prettier/react"
+  ],
+  "settings": {
+    "import/resolver": {
+      "node": true,
+      "eslint-import-resolver-typescript": true
+    },
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "arrow-body-style": "off",
+    "prettier/prettier": "off",
+    "no-restricted-globals": "warn",
+    "react/prop-types": "off"
+  },
+  "plugins": ["react", "prettier"]
+}
